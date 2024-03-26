@@ -1,0 +1,130 @@
+body{
+    background-image: url(backgroud-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Big-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 25vh;
+}
+.flex-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid, groove;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    height: 60vh;
+    width: 35%;
+    background-color: #ffffff;
+    opacity: 0.7;
+    box-sizing: border-box;
+}
+.flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid, groove;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    height: 60vh;
+    width: 35%;
+    background-color: #b3966e;
+    opacity: 0.8;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.day{
+    font-size: 27px;
+    font-weight: bold;
+    margin: 15px;
+}
+.item, .item-special{
+    width: 5vh;
+    height: 5vh;
+    margin: 1.5vh;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #eb1414;
+    text-align: center;
+    border: 1px;
+    border-radius: 2px;
+    background-color: transparent;
+}
+.item-special{
+    color: #a6a5a5;
+}
+.item:hover,
+.item:focus {
+    outline: solid;
+    outline-color: #a6a5a5;
+    color: #000000; 
+    cursor: pointer;
+} 
+.item:focus{
+    background-color: #000000;
+    color: #ffffff;
+}
+.item:active {
+    background-color: #000000; 
+    color: #FFFFFF;
+}
+.text{
+    background-color: #b3966e;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: bold;
+    border-color: transparent;
+    width: 95%;
+}
+.text:focus{
+    border-color: transparent;
+    outline: none;
+}
+::placeholder {
+    color: black;
+}
+
+@media (max-width: 1467px) {
+    .Big-container{
+        margin-top: 10vh;
+    }
+    .flex-container1, .flex-container2{
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+    .item, .item-special{
+        width: 3vh;
+        height: 3vh;
+        margin: 2vh;
+        font-size: 2vh;
+    }
+    .day{
+        font-size: 1.5vh;
+        margin: 2.3vh;
+    }
+    .title{
+        font-size: 4vh;
+    }
+    ::placeholder{
+        font-size: 2vh;
+    }
+}
